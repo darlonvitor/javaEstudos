@@ -23,7 +23,7 @@ public class Diretor extends Funcionario{
             System.out.println("Acesso autorizado");
             return true;
         }else{
-            System.out.println("Acesso negado");
+            System.out.println("Acesso negado !");
             return false;
         }
     }
