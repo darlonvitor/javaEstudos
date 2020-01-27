@@ -33,6 +33,8 @@ public class JavaEstudos {
         System.out.println("Total de bonificaçoes: "+cb.getTotalBonificacoes());
         //System.out.println("Bonificaao gerente: R$ " + g.getBonificacao() + "\n" + "Bonificaçao funcionario: R$ " + f.getBonificacao());
         
+        SistemaInterno.login(g);
+        
     }
     
 }
