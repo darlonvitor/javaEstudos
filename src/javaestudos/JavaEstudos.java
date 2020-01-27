@@ -22,7 +22,7 @@ public class JavaEstudos {
         ControleBonificacoes cb = new ControleBonificacoes();
         
         //Funcionario f = new Funcionario("Caio","034.675.123-90",2000.00);
-        Gerente g = new Gerente("Pedro","095.435.234.-98",5000.00,1234);
+        Gerente g = new Gerente("Pedro","095.435.234.-98",5000.00,1234,"Recursos Humanos");
         
         //cb.registra(f);
         cb.registra(g);

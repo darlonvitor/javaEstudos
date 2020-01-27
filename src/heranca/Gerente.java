@@ -13,10 +13,12 @@ public class Gerente extends Funcionario{
     
     private int senha;
     private int funcionariosGerenciados;
+    private String setor;
     
-    public Gerente(String nome, String cpf, double salario,int senha){
+    public Gerente(String nome, String cpf, double salario,int senha,String setor){
         super(nome,cpf,salario);
         this.senha = senha;
+        this.setor = setor;
     }
     
     public boolean autentica(int senha){
