@@ -5,11 +5,13 @@
  */
 package heranca;
 
+import interfaces.Autenticavel;
+
 /**
  *
  * @author darlo
  */
-public class Diretor extends Funcionario{
+public class Diretor extends Funcionario implements Autenticavel{
 
     private int senha;
     
