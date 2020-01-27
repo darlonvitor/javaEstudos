@@ -12,7 +12,7 @@ import interfaces.Autenticavel;
  * @author darlo
  */
 public class SistemaInterno {
-    public void login(Autenticavel a){
+    public static void login(Autenticavel a){
         int senha = 1234;
         
         boolean ok = a.autentica(senha);
