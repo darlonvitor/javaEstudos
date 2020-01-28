@@ -5,6 +5,7 @@
  */
 package collections;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 /**
  *
@@ -16,11 +17,53 @@ public class ExemploArrayList {
         List<String> nomes = new ArrayList<>();
         
         //adicionando elementos
-        nomes.add("joao");
+        nomes.add("Joao");
         nomes.add("Pedro");
         nomes.add("Sandra");
         nomes.add("Maria");
         
         System.out.println(nomes);
+        
+        //modificando elemento
+        nomes.set(2,"Larissa");
+        System.out.println(nomes);
+        
+        //ordenando com Collection
+        Collections.sort(nomes);
+        System.out.println(nomes);
+        
+        //removendo elemento por indice
+        //nomes.remove(1);
+        
+        //removendo elemento com objeto
+        nomes.remove("Pedro");
+        System.out.println(nomes);
+        
+        //tamanho da lista
+        int tamanho = nomes.size();
+        System.out.println(tamanho);
+        
+        //obtendo elemento pelo seu indice
+        String pessoa = nomes.get(2);
+        System.out.println(pessoa);
+        
+        //verificando se a lista contem determinado elemento 
+        boolean contem = nomes.contains("José");
+        System.out.println(contem);
+        
+        //Verificando se a lista está vazia
+        String msg = (nomes.isEmpty()) ? "A lista está vazia" : "A lista não está vazia.";
+        System.out.println(msg);
+        
+        //Obtendo indice de um elemento
+        int posicao = nomes.indexOf("Joao");
+        System.out.println(nomes.get(posicao) + " está na posição " + posicao);
+        
+        //Esvaziando lista
+        nomes.clear();
+        msg = (nomes.isEmpty()) ? "A lista está vazia" : "A lista não está vazia.";
+        System.out.println(msg);
+        
+        
     }
 }
