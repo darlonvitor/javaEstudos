@@ -6,6 +6,7 @@
 package collections;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 /**
  *
@@ -21,6 +22,8 @@ public class ExemploArrayList {
         nomes.add("Pedro");
         nomes.add("Sandra");
         nomes.add("Maria");
+        nomes.add("Josefa");
+        nomes.add("Nerculina");
         
         System.out.println(nomes);
         
@@ -59,10 +62,30 @@ public class ExemploArrayList {
         int posicao = nomes.indexOf("Joao");
         System.out.println(nomes.get(posicao) + " está na posição " + posicao);
         
+        /*
         //Esvaziando lista
         nomes.clear();
         msg = (nomes.isEmpty()) ? "A lista está vazia" : "A lista não está vazia.";
         System.out.println(msg);
+        */
+        
+        //---------------- Navegação ----------------//
+        
+        //foreach
+        
+        for(String nomeItem: nomes){
+            System.out.println("-->"+nomeItem);
+        }
+        
+        //utilizando iterator
+        Iterator<String> iterator = nomes.iterator();
+        //iterator.hasNext retorna true se houver um proximo elemento
+        //iterator.next() retorna o prox objeto
+        
+        while(iterator.hasNext()){
+            System.out.println("==>"+iterator.next());
+        }
+        
         
         
     }
