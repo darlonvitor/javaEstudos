@@ -85,8 +85,5 @@ public class ExemploArrayList {
         while(iterator.hasNext()){
             System.out.println("==>"+iterator.next());
         }
-        
-        
-        
     }
 }
