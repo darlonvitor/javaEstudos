@@ -17,7 +17,6 @@ public class EstudanteOrdemInversa implements Comparator<Estudante> {
     @Override
     public int compare(Estudante o1, Estudante o2) {
         return o2.getAge() - o1.getAge();//retorna a ordem decrescente da idade
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
